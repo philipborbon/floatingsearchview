@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.philipborbon'
 
 android {
     compileSdkVersion 28
@@ -7,7 +10,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 13
-        versionName "2.1.2"
+        versionName "2.1.3"
         //consumerProguardFiles 'consumer-proguard-rules.txt'
     }
 }
