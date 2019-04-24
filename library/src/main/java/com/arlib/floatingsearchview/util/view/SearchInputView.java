@@ -4,9 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.EditText;
 
-public class SearchInputView extends EditText {
+import androidx.appcompat.widget.AppCompatEditText;
+
+public class SearchInputView extends AppCompatEditText {
 
     private OnKeyboardSearchKeyClickListener mSearchKeyListener;
 

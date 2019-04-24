@@ -1,7 +1,7 @@
 package com.arlib.floatingsearchbiew.rxbinding;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
-import com.jakewharton.rxbinding2.InitialValueObservable;
+import com.jakewharton.rxbinding3.InitialValueObservable;
 
 import io.reactivex.Observer;
 import io.reactivex.android.MainThreadDisposable;
