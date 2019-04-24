@@ -1352,16 +1352,7 @@ public class FloatingSearchView extends FrameLayout {
             @Override
             public void onGlobalLayout() {
                 Util.removeGlobalLayoutObserver(mSuggestionsList, this);
-                boolean isSuggestionItemsFillRecyclerView = updateSuggestionsSectionHeight(newSearchSuggestions, withAnim);
-
-                //we only need to employ the reverse layout technique if the items don't fill up the RecyclerView
-                LinearLayoutManager suggestionsListLm = (LinearLayoutManager) mSuggestionsList.getLayoutManager();
-                if (isSuggestionItemsFillRecyclerView) {
-                    suggestionsListLm.setReverseLayout(false);
-                } else {
-                    mSuggestionsAdapter.reverseList();
-                    suggestionsListLm.setReverseLayout(true);
-                }
+                updateSuggestionsSectionHeight(newSearchSuggestions, withAnim);
                 mSuggestionsList.setAlpha(1);
             }
         });
